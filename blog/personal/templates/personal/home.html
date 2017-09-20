@@ -1,0 +1,12 @@
+{% extends "personal/header.html" %} 
+
+{% block content %} <!–– jinja logic ––>
+<p> Welcome to my personal blog! </p>
+<!–– 
+Extend is not always proper to use. For example one could have a conflict if 
+two different included HTMLs have body extensions.
+ Another way of using secondary HTMLs is "include" 
+ ––>
+{% include 'personal/includes/htmlsnippet.html' %}
+ 
+{% endblock %}

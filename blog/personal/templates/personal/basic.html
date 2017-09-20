@@ -1,0 +1,23 @@
+
+{% extends "personal/header.html" %} 
+<!–– 
+this extends personal/header.html 
+and puts the body belove there.
+––>
+
+
+{% block content %} 
+<!–– 
+this will display the content key from the dictionary. In views.py: 
+def contact(request):
+    return render(request, 'personal/basic.html',
+	{'content':['If you would like to contact me, you can email me.','ciyaelcicek@gmail.com']})
+ Using Jinja logic:
+ ––>
+ 
+ 	{% for c in content%}
+	   <p>{{c}}</p>
+	{% endfor %}
+ 
+
+{% endblock %}
