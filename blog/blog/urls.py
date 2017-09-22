@@ -17,7 +17,7 @@ from django.conf.urls import url, include
 from django.contrib import admin
 
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
+    url(r'^admin/', admin.site.urls), #This line means that for every URL that starts with admin/, Django will find a corresponding view.
     url(r'^', include('personal.urls')),
     url(r'^posts/', include('posts.urls')),
     url(r'^i_was_here/', include('i_was_here.urls')),
