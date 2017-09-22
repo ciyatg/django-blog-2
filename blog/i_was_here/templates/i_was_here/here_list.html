@@ -2,8 +2,9 @@
 
 {% block content %}
 
-	{% for person in object_list %}
-		<h5><a href="/i_was_here/{{person.id}}">  {{ person.title }}</a></h5>
+	{% for person in people %}
+	    <p>published: {{ person.published_date }}</p>
+		<h5><a href="/i_was_here/{{person.id}}">  {{ person }} was here</a></h5>
 	{% endfor %}
 	
 {% endblock %}
