@@ -1,10 +1,10 @@
 {% extends "personal/header.html" %}
 
+
 {% block content %}
 
 	{% for person in people %}
-	    <p>published: {{ person.published_date }}</p>
-		<h5><a href="/i_was_here/{{person.id}}">  {{ person }} was here</a></h5>
+	    <h4>  <em>{{ person }}</em> was here </h4> <h6>{{ person.published_date }}</h4>
 	{% endfor %}
 	
 {% endblock %}
