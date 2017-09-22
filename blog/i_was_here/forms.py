@@ -5,6 +5,6 @@ class NameForm(forms.ModelForm):
 
     class Meta:
         model = WasHere #Django will use WasHere model for the form.
-        fields = ('Name',)
+        fields = ('name',)
 
 
